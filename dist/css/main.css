@@ -84,4 +84,8 @@
 
 @media screen and (min-width: 2560px) {
   body {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .hero-text h1 {
+    font-size: 6rem; }
+  .hero-text button {
+    font-size: 1.25rem; } }
