@@ -1,0 +1,31 @@
+//Variables
+$nav-text-color: #fff;
+$desktop-nav-text-color: #000;
+$hover-color: #b3b2b2;
+
+//Media Queries
+@mixin mediaTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaDesktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin mediaLaptop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin mediaLgLaptop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+@mixin media4k {
+  @media screen and (min-width: 2560px) {
+    @content;
+  }
+}

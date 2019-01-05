@@ -1,0 +1,52 @@
+#logo {
+  a {
+    width: 100%;
+  }
+}
+.logo-svg {
+  display: block;
+  width: 25%;
+  padding: 20px;
+  margin: 0 auto;
+}
+#icons {
+  width: 75%;
+  ul {
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    li {
+      font-size: 1.5rem;
+    }
+  }
+  a:link,
+  a:visited {
+    color: $nav-text-color;
+  }
+  a:hover {
+    color: $hover-color;
+  }
+}
+#nike-nav {
+  display: none;
+  ul {
+    list-style-type: none;
+    display: flex;
+    li:not(:first-child) {
+      padding-left: 30px;
+    }
+    li i {
+      padding-right: 15px;
+    }
+  }
+  a:link,
+  a:visited {
+    color: $desktop-nav-text-color;
+  }
+  a:hover {
+    color: $hover-color;
+  }
+}

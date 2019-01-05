@@ -1,0 +1,34 @@
+@include mediaTablet {
+}
+@include mediaDesktop {
+  #icons {
+    display: none;
+  }
+  #nike-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 44px;
+  }
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 45%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .logo-svg {
+    margin: 0;
+  }
+}
+@include mediaLaptop {
+}
+@include mediaLgLaptop {
+}
+@include media4k {
+  body {
+    font-size: 2rem;
+  }
+}

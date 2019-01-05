@@ -1,0 +1,62 @@
+#logo a {
+  width: 100%; }
+
+.logo-svg {
+  display: block;
+  width: 25%;
+  padding: 20px;
+  margin: 0 auto; }
+
+#icons {
+  width: 75%; }
+  #icons ul {
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    #icons ul li {
+      font-size: 1.5rem; }
+  #icons a:link,
+  #icons a:visited {
+    color: #fff; }
+  #icons a:hover {
+    color: #b3b2b2; }
+
+#nike-nav {
+  display: none; }
+  #nike-nav ul {
+    list-style-type: none;
+    display: flex; }
+    #nike-nav ul li:not(:first-child) {
+      padding-left: 30px; }
+    #nike-nav ul li i {
+      padding-right: 15px; }
+  #nike-nav a:link,
+  #nike-nav a:visited {
+    color: #000; }
+  #nike-nav a:hover {
+    color: #b3b2b2; }
+
+@media screen and (min-width: 992px) {
+  #icons {
+    display: none; }
+  #nike-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 44px; }
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #logo a {
+      width: 45%;
+      margin: 0;
+      padding: 0; }
+  .logo-svg {
+    margin: 0; } }
+
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 2rem; } }
