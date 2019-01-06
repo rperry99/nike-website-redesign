@@ -39,23 +39,23 @@
   #action {
     .container {
       width: 80%;
-    }
-    form {
-      display: flex;
-      justify-content: space-between;
-      input {
-        width: 58%;
+      form {
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 58%;
+        }
+        button {
+          width: 38%;
+          margin-top: 0;
+        }
       }
-      button {
-        width: 38%;
-        margin-top: 0;
+      h2 {
+        font-size: 2.4rem;
       }
-    }
-    h2 {
-      font-size: 2.4rem;
-    }
-    p {
-      font-size: 1.2rem;
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -147,7 +147,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    form {
+    .container form {
       input,
       button {
         margin-top: 4px;
