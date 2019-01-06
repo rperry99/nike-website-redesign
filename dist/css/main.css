@@ -64,6 +64,110 @@
     color: #fff;
     padding: 10px; }
 
+#squares,
+#featured {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  #squares .square,
+  #featured .square {
+    background-size: cover;
+    background-position: center; }
+
+.title:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #000;
+  left: 100%;
+  z-index: 5000;
+  top: calc(50% - 20px); }
+
+#squares {
+  border-bottom: 20px solid #fff; }
+  #squares .lifestyle {
+    background: url("../img/lifestyle.jpg");
+    background-size: cover;
+    background-position: center; }
+  #squares .soccer {
+    background: url("../img/soccer.jpg");
+    background-size: cover;
+    background-position: center; }
+  #squares .basketball {
+    background: url("../img/basketball.jpg");
+    background-size: cover;
+    background-position: center; }
+  #squares .training {
+    background: url("../img/training.jpg");
+    background-size: cover;
+    background-position: center; }
+  #squares .running {
+    background: url("../img/running.jpg");
+    background-size: cover;
+    background-position: center; }
+
+#featured .square:not(.title):not(.selected) {
+  border: solid 1px #cacaca; }
+
+#featured .square:not(.title):not(.content) {
+  font-size: 0.55rem;
+  color: #000;
+  font-weight: 800; }
+
+#featured .square:not(.title) .table-cell {
+  vertical-align: bottom; }
+
+#featured .free-rn {
+  background: url("../img/free-rn.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#featured .air-max {
+  background: url("../img/air-max.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#featured .metcon {
+  background: url("../img/metcon.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#featured .kyrie {
+  background: url("../img/kyrie.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#featured .vapor {
+  background: url("../img/vapor.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.square {
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center; }
+  .square .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto; }
+    .square .content .table {
+      display: table;
+      height: 100%;
+      width: 100%; }
+      .square .content .table .table-cell {
+        display: table-cell;
+        vertical-align: middle; }
+
 #shoe {
   background: url("../img/free-rn-description.jpg") no-repeat;
   background-position: 250px;
@@ -118,6 +222,40 @@
       width: 75%; }
     #story .story {
       width: 65%; }
+  #squares {
+    border-bottom: 5px solid #000; }
+    #squares .title::after {
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #000;
+      top: calc(50% - 30px); }
+  #featured .title {
+    font-size: 1.25rem; }
+  #featured .square {
+    width: 16.66%;
+    padding-bottom: 16.66%; }
+  #featured .square:not(.title) .content .table .table-cell {
+    font-size: 0.65rem;
+    letter-spacing: 0.1ch; }
+  #featured .selected:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #7a7a7a;
+    top: 100%;
+    z-index: 50;
+    left: calc(50% - 20px); }
+  #featured .selected .content {
+    background: rgba(0, 0, 0, 0.5); }
+  #featured .selected .content .table .table-cell {
+    color: #fff; }
+  .square {
+    width: 33.333%;
+    padding-bottom: 33.333%;
+    font-size: 2.5rem; }
   #shoe {
     display: block;
     height: 100%; }
@@ -165,7 +303,12 @@
       margin: 0;
       padding: 0; }
   .logo-svg {
-    margin: 0; } }
+    margin: 0; }
+  #squares .title:after {
+    border-top: 90px solid transparent;
+    border-bottom: 90ps solid transparent;
+    border-left: 90px solid #000;
+    top: calc(50% - 90px); } }
 
 @media screen and (min-width: 1024px) {
   #story {
@@ -173,7 +316,10 @@
   #shoe .writeup p {
     width: 40%; }
   #action .container {
-    width: 60%; } }
+    width: 60%; }
+  #featured .square:not(.title) .content .table .table-cell {
+    font-size: 0.9rem;
+    letter-spacing: 0.1ch; } }
 
 @media screen and (min-width: 1440px) {
   #story {
@@ -194,6 +340,24 @@
     button {
       font-size: 1.25rem;
     }
+  }
+
+  #squares .title::after {
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    border-left: 90px solid black;
+    top: calc(50% - 90px);
+    left: 99%;
+  }
+  #featured .title {
+    font-size: 2.5rem;
+  }
+  #featured .square:not(.title) .content .table .table-cell {
+    font-size: 1.25rem;
+    letter-spacing: 0.1ch;
+  }
+  #squares .square {
+    font-size: 6rem;
   }
 
   #story img {

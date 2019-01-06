@@ -30,6 +30,125 @@
   }
 }
 
+//Both Featured Categories and Feautred Items
+#squares,
+#featured {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .square {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.title:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #000;
+  left: 100%;
+  z-index: 5000;
+  top: calc(50% - 20px);
+}
+
+#squares {
+  border-bottom: 20px solid #fff;
+  .lifestyle {
+    background: url("../img/lifestyle.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .soccer {
+    background: url("../img/soccer.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .basketball {
+    background: url("../img/basketball.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .training {
+    background: url("../img/training.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .running {
+    background: url("../img/running.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#featured {
+  .square:not(.title):not(.selected) {
+    border: solid 1px rgb(202, 202, 202);
+  }
+  .square:not(.title):not(.content) {
+    font-size: 0.55rem;
+    color: #000;
+    font-weight: 800;
+  }
+  .square:not(.title) .table-cell {
+    vertical-align: bottom;
+  }
+  .free-rn {
+    background: url("../img/free-rn.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .air-max {
+    background: url("../img/air-max.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .metcon {
+    background: url("../img/metcon.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .kyrie {
+    background: url("../img/kyrie.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .vapor {
+    background: url("../img/vapor.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.square {
+  position: relative;
+  width: 50%;
+  padding-bottom: 50%;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    .table {
+      display: table;
+      height: 100%;
+      width: 100%;
+      .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
 //Featured Product
 #shoe {
   background: url("../img/free-rn-description.jpg") no-repeat;
