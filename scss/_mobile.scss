@@ -1,4 +1,5 @@
 @include mediaTablet {
+  //The Story
   #story {
     display: flex;
     justify-content: space-around;
@@ -11,6 +12,7 @@
     }
   }
 
+  //Featured Shoe
   #shoe {
     display: block;
     height: 100%;
@@ -32,7 +34,32 @@
       width: 175px;
     }
   }
+
+  //Call to Action
+  #action {
+    .container {
+      width: 80%;
+    }
+    form {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 58%;
+      }
+      button {
+        width: 38%;
+        margin-top: 0;
+      }
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
+
 @include mediaDesktop {
   #icons {
     display: none;
@@ -56,6 +83,7 @@
     margin: 0;
   }
 }
+
 @include mediaLaptop {
   #story {
     padding: 50px 100px 50px 100px;
@@ -64,7 +92,12 @@
   #shoe .writeup p {
     width: 40%;
   }
+
+  #action .container {
+    width: 60%;
+  }
 }
+
 @include mediaLgLaptop {
   #story {
     padding: 50px 200px 50px 200px;
@@ -79,6 +112,7 @@
   body {
     font-size: 2rem;
   }
+
   .hero-text {
     h1 {
       font-size: 6rem;
@@ -87,6 +121,7 @@
       font-size: 1.25rem;
     }
   }
+
   #story img {
     width: 75%;
   }
@@ -104,6 +139,23 @@
     }
     button {
       width: 400px;
+    }
+  }
+
+  #action {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+      input,
+      button {
+        margin-top: 4px;
+        height: 50px;
+      }
+      [placeholder^='Your Email'] {
+        padding-left: 20px;
+      }
     }
   }
 }

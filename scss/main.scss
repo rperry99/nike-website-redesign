@@ -56,4 +56,41 @@
   }
 }
 
+//Call to Action
+#action {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 0.723rem;
+      span {
+        text-transform: uppercase;
+        padding: 0 5px;
+      }
+    }
+    form {
+      input,
+      button {
+        width: 100%;
+        height: 35px;
+      }
+      button {
+        margin-top: 8px;
+        color: #fff;
+        background: #000;
+        text-transform: uppercase;
+        border: none;
+      }
+      [placeholder^="Your Email"] {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
 @import "mobile.scss";
