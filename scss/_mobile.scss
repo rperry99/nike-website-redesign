@@ -1,4 +1,15 @@
 @include mediaTablet {
+  #story {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    img {
+      width: 75%;
+    }
+    .story {
+      width: 65%;
+    }
+  }
 }
 @include mediaDesktop {
   #icons {
@@ -24,9 +35,16 @@
   }
 }
 @include mediaLaptop {
+  #story {
+    padding: 50px 100px 50px 100px;
+  }
 }
 @include mediaLgLaptop {
+  #story {
+    padding: 50px 200px 50px 200px;
+  }
 }
+/*
 @include media4k {
   body {
     font-size: 2rem;
@@ -39,4 +57,8 @@
       font-size: 1.25rem;
     }
   }
+  #story img {
+    width: 75%;
+  }
 }
+*/

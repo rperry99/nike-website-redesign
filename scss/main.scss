@@ -30,4 +30,20 @@
   }
 }
 
+//The Story
+#story {
+  background: url("../img/basketball-bg.jpg") center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0;
+  img {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+  }
+  .story {
+    padding: 20px;
+  }
+}
+
 @import "mobile.scss";

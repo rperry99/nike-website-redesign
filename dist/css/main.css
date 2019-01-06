@@ -64,6 +64,28 @@
     color: #fff;
     padding: 10px; }
 
+#story {
+  background: url("../img/basketball-bg.jpg") center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0; }
+  #story img {
+    width: 50%;
+    display: block;
+    margin: 20px auto; }
+  #story .story {
+    padding: 20px; }
+
+@media screen and (min-width: 768px) {
+  #story {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px; }
+    #story img {
+      width: 75%; }
+    #story .story {
+      width: 65%; } }
+
 @media screen and (min-width: 992px) {
   #icons {
     display: none; }
@@ -82,10 +104,29 @@
   .logo-svg {
     margin: 0; } }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1024px) {
+  #story {
+    padding: 50px 100px 50px 100px; } }
+
+@media screen and (min-width: 1440px) {
+  #story {
+    padding: 50px 200px 50px 200px; } }
+
+/*
+@include media4k {
   body {
-    font-size: 2rem; }
-  .hero-text h1 {
-    font-size: 6rem; }
-  .hero-text button {
-    font-size: 1.25rem; } }
+    font-size: 2rem;
+  }
+  .hero-text {
+    h1 {
+      font-size: 6rem;
+    }
+    button {
+      font-size: 1.25rem;
+    }
+  }
+  #story img {
+    width: 75%;
+  }
+}
+*/
