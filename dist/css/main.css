@@ -213,6 +213,15 @@
   #action .container form [placeholder^="Your Email"] {
     padding-left: 10px; }
 
+footer {
+  background: #000;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  footer img {
+    width: 25%; }
+
 @media screen and (min-width: 768px) {
   #story {
     display: flex;
@@ -308,7 +317,9 @@
     border-top: 90px solid transparent;
     border-bottom: 90px solid transparent;
     border-left: 90px solid #000;
-    top: calc(50% - 90px); } }
+    top: calc(50% - 90px); }
+  footer img {
+    width: 15%; } }
 
 @media screen and (min-width: 1024px) {
   #story {
@@ -325,7 +336,9 @@
   #story {
     padding: 50px 200px 50px 200px; }
   #shoe .writeup p {
-    width: 30%; } }
+    width: 30%; }
+  footer {
+    display: none; } }
 
 /*
 @include media4k {

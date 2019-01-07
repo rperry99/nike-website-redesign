@@ -212,4 +212,16 @@
   }
 }
 
+//Footer
+footer {
+  background: #000;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  img {
+    width: 25%;
+  }
+}
+
 @import "mobile.scss";

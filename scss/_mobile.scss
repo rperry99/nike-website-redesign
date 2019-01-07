@@ -135,6 +135,10 @@
     border-left: 90px solid #000;
     top: calc(50% - 90px);
   }
+
+  footer img {
+    width: 15%;
+  }
 }
 
 @include mediaLaptop {
@@ -163,6 +167,10 @@
 
   #shoe .writeup p {
     width: 30%;
+  }
+
+  footer {
+    display: none;
   }
 }
 /*
