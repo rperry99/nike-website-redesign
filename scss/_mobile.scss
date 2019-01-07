@@ -105,6 +105,40 @@
       }
     }
   }
+
+  //Contact
+  .social,
+  .get-started,
+  .get-in-touch {
+    display: none;
+  }
+  #contact {
+    display: flex;
+    background: url("../img/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    .container {
+      padding: 30px 5px;
+    }
+    .social,
+    .get-started,
+    .get-in-touch {
+      display: block;
+      width: 33.333%;
+      background: none;
+    }
+    .get-started {
+      color: #fff;
+      a {
+        color: #fff;
+        border: solid 1px #fff;
+      }
+      ul li {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 @include mediaDesktop {
@@ -158,6 +192,10 @@
     font-size: 0.9rem;
     letter-spacing: 0.1ch;
   }
+
+  #contact .get-in-touch ul li {
+    font-size: 1rem;
+  }
 }
 
 @include mediaLgLaptop {
@@ -167,6 +205,13 @@
 
   #shoe .writeup p {
     width: 30%;
+  }
+
+  #contact {
+    justify-content: space-between;
+    .container {
+      width: 75%;
+    }
   }
 
   footer {

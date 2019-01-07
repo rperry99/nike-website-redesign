@@ -212,6 +212,99 @@
   }
 }
 
+//Social
+.social {
+  background: url("../img/basketball-bg.jpg");
+  background-position: center;
+  .container {
+    color: #fff;
+  }
+  ul,
+  ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+.social .container,
+.get-started .container {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.get-in-touch {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h2,
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  ul {
+    list-style: none;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    li:nth-child(2) {
+      margin-left: calc(1rem + 10px);
+    }
+    li i {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+    li:nth-child(1) i {
+      margin-right: 13px;
+    }
+  }
+}
+.get-started {
+  a:link,
+  a:visited {
+    color: #26292d;
+  }
+  a {
+    width: 48%;
+    border: solid 1px #26292d;
+    border-radius: 5%;
+    padding: 4px 0;
+  }
+  a:not(:nth-child(6)):not(:nth-child(5)) {
+    margin-bottom: 2%;
+  }
+  .container {
+    .get-started-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+//This is for the tablet and above version of the contact info
+#contact {
+  display: none;
+}
+
 //Footer
 footer {
   background: #000;

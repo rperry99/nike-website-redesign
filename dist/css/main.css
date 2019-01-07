@@ -213,6 +213,81 @@
   #action .container form [placeholder^="Your Email"] {
     padding-left: 10px; }
 
+.social {
+  background: url("../img/basketball-bg.jpg");
+  background-position: center; }
+  .social .container {
+    color: #fff; }
+  .social ul,
+  .social ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .social ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 75%;
+    margin: 0 auto; }
+
+.social .container,
+.get-started .container {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase; }
+
+.get-in-touch {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff; }
+  .get-in-touch .container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px; }
+  .get-in-touch h2,
+  .get-in-touch h3 {
+    text-align: center;
+    text-transform: uppercase; }
+  .get-in-touch h3 {
+    font-size: 1.1rem;
+    margin-bottom: 30px; }
+  .get-in-touch ul {
+    list-style: none;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0; }
+    .get-in-touch ul li:nth-child(2) {
+      margin-left: calc(1rem + 10px); }
+    .get-in-touch ul li i {
+      margin-right: 10px;
+      font-size: 1rem; }
+    .get-in-touch ul li:nth-child(1) i {
+      margin-right: 13px; }
+
+.get-started a:link,
+.get-started a:visited {
+  color: #26292d; }
+
+.get-started a {
+  width: 48%;
+  border: solid 1px #26292d;
+  border-radius: 5%;
+  padding: 4px 0; }
+
+.get-started a:not(:nth-child(6)):not(:nth-child(5)) {
+  margin-bottom: 2%; }
+
+.get-started .container .get-started-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#contact {
+  display: none; }
+
 footer {
   background: #000;
   height: 75px;
@@ -294,7 +369,32 @@ footer {
     #action .container h2 {
       font-size: 2.4rem; }
     #action .container p {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .social,
+  .get-started,
+  .get-in-touch {
+    display: none; }
+  #contact {
+    display: flex;
+    background: url("../img/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between; }
+    #contact .container {
+      padding: 30px 5px; }
+    #contact .social,
+    #contact .get-started,
+    #contact .get-in-touch {
+      display: block;
+      width: 33.333%;
+      background: none; }
+    #contact .get-started {
+      color: #fff; }
+      #contact .get-started a {
+        color: #fff;
+        border: solid 1px #fff; }
+      #contact .get-started ul li {
+        font-size: 0.8rem; } }
 
 @media screen and (min-width: 992px) {
   #icons {
@@ -330,13 +430,19 @@ footer {
     width: 60%; }
   #featured .square:not(.title) .content .table .table-cell {
     font-size: 0.9rem;
-    letter-spacing: 0.1ch; } }
+    letter-spacing: 0.1ch; }
+  #contact .get-in-touch ul li {
+    font-size: 1rem; } }
 
 @media screen and (min-width: 1440px) {
   #story {
     padding: 50px 200px 50px 200px; }
   #shoe .writeup p {
     width: 30%; }
+  #contact {
+    justify-content: space-between; }
+    #contact .container {
+      width: 75%; }
   footer {
     display: none; } }
 
