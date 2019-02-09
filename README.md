@@ -5,3 +5,7 @@ This design was given to me as a test a year ago. I am redoing it now with the s
 All I am doing is turning the design someone else did into code.
 
 Unfortunately, I do not know who the designer is. If there is an issue with this, please let me know and I will take this down.
+
+# nike-website-redesign
+
+I applied to a company and they gave me the .AI file to recreate. 
